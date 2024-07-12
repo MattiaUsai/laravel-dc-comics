@@ -13,9 +13,6 @@ class PageController extends Controller
         return view('addcomics');
     }
     public function comics(){
-        // $cocktails = Cocktail::all();
-        
-        // return view('comics',compact('cocktails'));
         return view('comics');
     }
 }
