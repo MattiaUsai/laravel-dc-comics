@@ -8,7 +8,7 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="/comics" class="nav-link">Fumetti</a></li>
+        <li class="nav-item"><a href="/comicss" class="nav-link">Fumetti</a></li>
         <li class="nav-item"><a href="/addcomics" class="nav-link">Aggiungi Fumetto</a></li>
         
       </ul>

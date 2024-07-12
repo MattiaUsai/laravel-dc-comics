@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Comic;
 use Illuminate\Http\Request;
 
 class ComicController extends Controller
@@ -11,8 +12,11 @@ class ComicController extends Controller
      * Display a listing of the resource.
      */
     public function index()
+
     {
-        //
+        $comics = Comic::all();
+
+        return view('comics.comic', compact('comics'));
     }
 
     /**
@@ -28,6 +32,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        
         //
     }
 
@@ -36,7 +41,9 @@ class ComicController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $comic = Comic::find($id);
+        
+        return view('comics.show_comic', compact('comic'));
     }
 
     /**
