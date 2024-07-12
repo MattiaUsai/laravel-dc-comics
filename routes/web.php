@@ -13,10 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    
-
-
-
-    return view('app');
-});
+Route::get('/', function () {return view('home');});
+Route::get('/comics', function () {return view('comics');});
+Route::get('/addcomics', function () {return view('addcomics');});
