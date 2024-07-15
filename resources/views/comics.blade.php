@@ -11,18 +11,23 @@
 
 <div class=" bg-dark">
     <div class="container py-5">
-        <div class="row mx-auto  w-75">
+        <div class="row mx-auto  ">
             @foreach ($comics as $comic)              
                 <div class="col-sm-2 mb-3 mb-sm-0">
                     <div class="card">
-                        <div class="card-body">
-                            <p class="card-title">{{$comic ->title}}</p>
-                            
-                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                        
+                        <a class="w-100" href="{{route('comics.show', $comic->id)}}" >
+                            <img class="w-100 " src="{{$comic->thumb}}" alt=""> 
+                        </a>
+                        
+
+                                                
+                        <p class="card-title">{{$comic ->title}}</p>                          
+                                                    
                     </div>
                 </div>
             @endforeach
+            
             
 
         </div>
