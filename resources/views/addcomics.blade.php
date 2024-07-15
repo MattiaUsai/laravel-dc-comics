@@ -37,10 +37,10 @@
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>
-                <input type="text" class="form-control" name="description" id="description">
+                <textarea class="form-control" rows="10" name="description"  id="description"></textarea>
             </div>
             
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Aggiungi Comics</button>
         </form>
     </div>
 </div>

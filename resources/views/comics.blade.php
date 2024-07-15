@@ -13,7 +13,7 @@
             <ul>
             @foreach ($comics as $comic)              
                 <li>             
-                    <p class="card-title">{{$comic ->title}}</p>                          
+                    <p class="card-title">{{$comic ->title}} - <a class="text-danger" href="{{route('comics.edit', $comic->id)}}"> Modifica</a></p>                          
                 </li>                                     
                   
             @endforeach
