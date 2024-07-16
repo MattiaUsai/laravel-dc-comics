@@ -7,10 +7,10 @@ Modifica Fumetto
 @section('main')
 <div class="container">
     <div class="row">
-        <form action="{{route('comics.update', $comic->id)}}" method="POST">
+            <form action="{{route('comics.update', $comic->id)}}" method="POST">
 
-            @csrf
-            @method("PUT")
+                @csrf
+                @method("PUT")
             <div class="mb-3">
                 <label for="title" class="form-label">Titolo</label>
                 <input type="text" class="form-control" name="title" value="{{$comic->title}}" id="title">
