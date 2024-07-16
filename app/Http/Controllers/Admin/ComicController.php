@@ -17,7 +17,7 @@ class ComicController extends Controller
     {
         $comics = Comic::all();
 
-        return view('comics.comic', compact('comics'));
+        return view('comics', compact('comics'));
     }
 
     /**
@@ -95,10 +95,12 @@ class ComicController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Comic $comic)
     {
-         $comic = Comic::find($id);
+         $comics = Comic::all();
          $comic->delete();
+        return redirect()->route('comics.index');
+
         
         
     }

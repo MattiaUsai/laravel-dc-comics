@@ -15,15 +15,17 @@
                 <li>             
                     <p class="card-title">{{$comic ->title}} - <a class="text-danger" href="{{route('comics.edit', $comic->id)}}"> Modifica</a></p>  
                     <form 
-                    action="{{route('comics.destroy', $comic->id)}}" method="post"> 
+                    action="{{route('comics.destroy', $comic->id)}}" method="POST"> 
                     @csrf 
                     @method("DELETE")
-                    <input type="submit" value="X"></form>                        
+                    <input type="submit" value="X">
+                </form>                        
                 </li>                                     
                   
             @endforeach
             </ul>
             
+
 
         </div>
     </div>
